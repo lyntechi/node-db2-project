@@ -12,8 +12,8 @@ router.get("/", async (req, res, next) => {
 
 router.get("/:id", async (req, res, next) => {
   try {
-    const id = req.params.id;
-    const car = await db("cars").where(`${id}`).first();
+    const {id} = req.params
+    const car = await db("cars").where({id}).first();
     res.json(car);
   } catch (err) {
     next(err);
@@ -22,8 +22,8 @@ router.get("/:id", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
   try {
-    const id = await db("cars").insert(req.body);
-    const newCar = await db("cars").where(`${id}`).first();
+    const [id] = await db("cars").insert(req.body);
+    const newCar = await db("cars").where({id}).first();
     res.status(201).json(newCar);
   } catch (err) {
     next(err);

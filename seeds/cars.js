@@ -6,7 +6,7 @@ exports.seed = async function (knex) {
       make: "FORD",
       model: "E-150 CLUB WAGON",
       mileage: 13000,
-      transmissonType: "Manual",
+      transmissionType: "Manual",
       titleStatus: "Clean",
     },
     {
@@ -14,7 +14,7 @@ exports.seed = async function (knex) {
       make: "KTM",
       model: "250 XC-W",
       mileage: 22000,
-      transmissonType: "Automatic",
+      transmissionType: "Automatic",
       titleStatus: "Clean",
     },
     {
@@ -22,7 +22,7 @@ exports.seed = async function (knex) {
       make: "MERCEDES-BENZ",
       model: "S350",
       mileage: 67000,
-      transmissonType: "Semi-auto",
+      transmissionType: "Semi-auto",
       titleStatus: "Salvaged",
     },
     {
@@ -30,7 +30,7 @@ exports.seed = async function (knex) {
       make: "INTERNATIONAL",
       model: " CXT",
       mileage: 55041,
-      transmissonType: "dual-clutch",
+      transmissionType: "dual-clutch",
       titleStatus: "Clean",
     },
     {
@@ -38,7 +38,7 @@ exports.seed = async function (knex) {
       make: "HARLEY DAVIDSON",
       model: "XL1200X FORTY-EIGHT",
       mileage: 120000,
-      transmissonType: "automatic",
+      transmissionType: "automatic",
       titleStatus: " Salvaged",
     },
   ]);
